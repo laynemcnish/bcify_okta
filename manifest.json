@@ -1,0 +1,11 @@
+{
+   "content_scripts": [{
+      "css": [ "Custom.css" ],
+      "matches": [ "https://epicgames.okta.com/*" ]
+   }], 
+   "manifest_version": 2,
+   "name": "BCify Okta",
+   "version": "1.0",
+   "web_accessible_resources": [ "Custom.css" ],
+   "description": "Make okta more bc-friendly"
+}
