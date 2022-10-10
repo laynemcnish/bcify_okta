@@ -1,11 +1,27 @@
 {
-   "content_scripts": [{
-      "css": [ "Custom.css" ],
-      "matches": [ "https://epicgames.okta.com/*" ]
-   }], 
-   "manifest_version": 2,
-   "name": "BCify Okta",
-   "version": "1.0",
-   "web_accessible_resources": [ "Custom.css" ],
-   "description": "Make okta more bc-friendly"
+  "content_scripts": [
+    {
+      "css": [
+        "Custom.css"
+      ],
+      "matches": [
+        "https://epicgames.okta.com/*"
+      ]
+    }
+  ],
+  "manifest_version": 3,
+  "name": "BCify Okta",
+  "version": "1.1",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "Custom.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "description": "Make okta more bc-friendly",
+  "content_security_policy": {}
 }
